@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Paragraph Tabs</title>
+
+<style>
+body {
+  font-family: 'Anonymous Pro', monospace;
+  padding: 20px;
+}
+
+.click-word {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tab-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #000F0;
+  border-radius: 8px;
+  display: none;
+  animation: fade 0.3s ease;
+}
+
+.tab-box img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+@keyframes fade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+</style>
+</head>
+<body>
+
+<p>
+reporting <span class="click-word" onclick="openTab('happening')">the happening</span>
+will not change too much = importance is hiding <span class="click-word" onclick="openTab('good')">the good</span> for a long time , when its about <a href="https://moneypenny11.github.io/Swiss-visa/" target="_blank">inspecification(link)</a>
+</p>
+
+<div id="good" class="tab-box">
+  <h3>The good</h3>
+  <p>physically</p>
+  <p><a href="https://youtu.be/Kr-eRQ4Zjgc?si=g6_j9rfe-wwugaZQ" target"_blank">investigation</a></p> connection 
+<p><a href="https://drive.google.com/file/d/13phMsSoaiFLr8bapfv-Hi1QsmpQHKcqf/view?usp=drivesdk" target"_blank">investigation</a></p>
+<br>
+<p>The axiom_political picture</p>
+<p><a href="https://www.facebook.com/s
+hare/p/1BXKimWME1/" target="_blank">facebook link</a></p> connection <p><a href="https://drive.google.com/file/d/1QfdAo8A8irMD_69w0ck-9kPYnpO7nf2d/view?usp=drivesdk" target"_blank">investigation</a></p>
+</div>
+
+<div id="happening" class="tab-box">
+  <h3>The happening</h3>
+  <p>inhaling very slight in the air can make me awake for the full inhaling time = environnement</p>
+  <p>indirect mental attacks</p>
+</div>
+
+<script>
+function openTab(id) {
+  const tabs = document.querySelectorAll('.tab-box');
+  tabs.forEach(tab => tab.style.display = "none");
+
+  document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
